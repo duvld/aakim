@@ -1,2 +1,0 @@
-# aakim
-the aakim group
