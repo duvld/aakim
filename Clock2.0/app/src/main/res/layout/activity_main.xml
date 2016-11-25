@@ -18,16 +18,6 @@
 
     //android:background="@android:color/holo_blue_dark"
 
-    <TextView
-        android:text="Nothing Set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/update_text"
-        android:layout_marginTop="60dp"
-        android:layout_below="@+id/timer_on"
-        android:layout_centerHorizontal="true" />
-
     <Button
         style="@style/Widget.AppCompat.Button.Colored"
         android:text="Set Timer"
@@ -64,5 +54,24 @@
         android:layout_below="@+id/timer_on"
         android:layout_toEndOf="@+id/update_text"
         android:id="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Sample"
+        android:ems="10"
+        android:layout_below="@+id/timer_on"
+        android:layout_toStartOf="@+id/button"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:text="Nothing Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/update_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
