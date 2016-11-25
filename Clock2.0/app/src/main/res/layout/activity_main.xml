@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/timer_on"
         android:layout_toEndOf="@+id/update_text"
-        android:id="@+id/button" />
+        android:id="@+id/serverButton" />
 
     <EditText
         android:layout_width="wrap_content"

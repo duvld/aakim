@@ -133,11 +133,24 @@ public class MainActivity extends AppCompatActivity {
                 alarm_manager.cancel(pending_intent);
             }
         });
+
+        //Code for operating server button--
+        Button next = (Button) findViewById(R.id.serverButton);
+        //method below:
+        next.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+            update_text.setText("SENT");
+            }
+
+        });
     }
 
     private void set_alarm_text(String output) {
         update_text.setText(output);
     }
+
 }
 
 
