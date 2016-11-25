@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Sample"
+        android:text="Samplerest NEW"
         android:ems="10"
         android:layout_below="@+id/timer_on"
         android:layout_toStartOf="@+id/button"
