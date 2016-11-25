@@ -1,0 +1,1 @@
+cd ~/aakim1/aakim/Clock2.0
