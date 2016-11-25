@@ -135,13 +135,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Code for operating server button--
-        Button next = (Button) findViewById(R.id.serverButton);
+        final Button next = (Button) findViewById(R.id.serverButton);
         //method below:
         next.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-            update_text.setText("SENT");
+
+                next.setBackgroundColor(255);
+
             }
 
         });
