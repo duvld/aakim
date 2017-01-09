@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     TextView update_text;
     Context context;
     PendingIntent pending_intent;
+    //flag for click check
+    int i = 0;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -136,13 +138,23 @@ public class MainActivity extends AppCompatActivity {
 
         //Code for operating server button--
         final Button next = (Button) findViewById(R.id.serverButton);
+
         //method below:
         next.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                next.setBackgroundColor(255);
+
+                if (i == 0) {
+                    next.setText("CLICKED");
+                    i = 1;
+                }
+                else
+                {
+                    next.setText("CLICKED " + i + " TIMES");
+                    i++;
+                }
 
             }
 
