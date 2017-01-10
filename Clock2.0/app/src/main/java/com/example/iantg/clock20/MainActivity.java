@@ -147,10 +147,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-<<<<<<< HEAD
                 next.setBackgroundColor(255);
                 startActivity(new Intent(MainActivity.this, Main2Activity.class));
-=======
 
                 if (i == 0) {
                     next.setText("CLICKED");
@@ -161,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
                     next.setText("CLICKED " + i + " TIMES");
                     i++;
                 }
->>>>>>> c5d2e1d6d6750b0aa4102b0cf7b84607893894a3
 
             }
 
