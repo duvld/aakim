@@ -10,24 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.iantg.clock20.MainActivity">
 
-
-
     <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
         android:layout_alignParentTop="true" />
-
-    //android:background="@android:color/holo_blue_dark"
-
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:text="Set Timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/timer_on"
-        android:layout_below="@+id/alarm_on"
-        android:layout_centerHorizontal="true" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Colored"
@@ -49,23 +36,6 @@
         android:layout_alignBottom="@+id/alarm_off"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/timer_on"
-        android:layout_toEndOf="@+id/update_text"
-        android:id="@+id/serverButton" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Samplerest NEW"
-        android:ems="10"
-        android:layout_below="@+id/timer_on"
-        android:id="@+id/editText" />
-
     <TextView
         android:text="Nothing Set"
         android:layout_width="wrap_content"
@@ -74,5 +44,34 @@
         android:id="@+id/update_text"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Set Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer_on"
+        android:layout_alignBaseline="@+id/alarm_on"
+        android:layout_alignBottom="@+id/alarm_on"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/serverButton"
+        android:layout_below="@+id/timer_on"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Samplerest NEW"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/serverButton"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

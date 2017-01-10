@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         // create an instance of a calendar
         final Calendar calendar = Calendar.getInstance();
 
+
+
         //initialize start button
         Button alarm_on = (Button) findViewById(R.id.alarm_on);
         //create and intent to alarm receiver
@@ -143,10 +145,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 next.setBackgroundColor(255);
+                startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
             }
 
         });
+
     }
 
     private void set_alarm_text(String output) {
